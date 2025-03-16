@@ -1,27 +1,30 @@
-/* Review.css */
 .review-section {
+  margin-top: 80px;
   background-color: #f3f4f6;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .review-title {
-  text-align: center;
   font-size: 2rem;
   font-weight: bold;
   color: #2d3748;
   margin-bottom: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .review-title span {
   color: #ec4899;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .review-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  max-width: 100%; 
+  margin: 0 auto;
 }
 
 .review-card {
@@ -31,6 +34,8 @@
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  width: 100%;
+  border: 3px solid #f78fb3;
 }
 
 .review-card:hover {
@@ -40,6 +45,8 @@
 .review-text {
   color: #4a5568;
   margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
 }
 
 .review-footer {
@@ -64,16 +71,32 @@
 .review-name {
   font-weight: bold;
   color: #2d3748;
+  font-family: "Montserrat", sans-serif;
 }
 
 .review-role {
   font-size: 0.9rem;
-  color: #6b7280;
+  color: darkred;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 }
 
 .review-stars {
-  color: #facc15;
+  color: deeppink;
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .review-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .review-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
 }
