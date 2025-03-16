@@ -18,11 +18,12 @@
 .navbar-menu{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 18px;
     color: #49557e;
     font-size: 18px;
+    background-color: lightpink;
     border: 1px solid #49557e;
-    padding: 30px 50px;
+    padding: 20px 40px;
     border-radius: 50px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -57,10 +58,10 @@
     border-bottom: 2px solid #49557c;
 }
 
-.navbar li{
+.navbar a{
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -139,6 +140,10 @@
     .navbar-right button{
         padding: 8px 25px;
     }
+
+    .logo{
+        font-size: 20px;
+    }
 }
 
 @media (max-width:900px) {
@@ -147,9 +152,9 @@
     }
 
     .navbar-menu{
-        gap: 15px;
+        gap: 10px;
         font-size: 10px;
-        padding: 15px 25px;
+        padding: 10px 15px;
     }
 
     .navbar-right{
