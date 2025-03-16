@@ -56,7 +56,7 @@ const StarRating = ({ rating }) => {
 
 const Reviews = () => {
   return (
-    <div className="review-section">
+    <div className="review-section" id="reviews">
       <h2 className="review-title">
         Watch Customer's <span>Reviews</span>
       </h2>
