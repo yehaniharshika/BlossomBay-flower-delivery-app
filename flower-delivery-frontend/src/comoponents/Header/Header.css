@@ -1,0 +1,68 @@
+.header {
+    width: 80vw; /* Make it full width */
+    height: 38vw; /* Make it full height */
+    margin: 0; /* Remove margins */
+    background: url('/f.jpg') no-repeat center center;
+    background-size: cover; /* Cover the full screen */
+    position: relative;
+    border-radius: 30px;
+}
+
+
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 400;
+    color: white;
+    font-size: max(4.5vw,22px);
+    font-family: 'Lilita One', sans-serif;
+    color: rgb(68, 7, 9);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1.2vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 600;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
