@@ -4,6 +4,7 @@ import { assets } from '../../assets/assets'
 
 const ProductItem = ({ id, name, price, description, image}) => {
   const [itemCount,setItemCount] = useState(0);
+  
   return (
     <div className='product-item'>
       <div className="product-item-img-container">
@@ -13,7 +14,7 @@ const ProductItem = ({ id, name, price, description, image}) => {
           :<div className='product-item-counter'>
               <img onClick={() => setItemCount(prev=>prev-1)} src={assets.remove_icon_red} alt=''/>
               <p>{itemCount}</p>
-              <img onClick={() => setItemCount(prev=prev+1)} src={assets.add_icon_green} alt=''/>
+              <img onClick={() => setItemCount(prev=>prev+1)} src={assets.add_icon_green} alt=''/>
           </div>
         }
       </div>

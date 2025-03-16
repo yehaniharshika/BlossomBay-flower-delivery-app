@@ -61,7 +61,7 @@
     border-radius: 50%;
 }
 
-.food-item-counter{
+.product-item-counter{
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -71,8 +71,11 @@
     padding: 6px;
     border-radius: 50px;
     background-color: white;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+
 }
 
-.food-item-counter img{
+.product-item-counter img{
     width: 30px;
 }
