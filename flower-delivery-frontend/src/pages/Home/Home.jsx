@@ -3,6 +3,7 @@ import "./Home.css"
 import Header from '../../comoponents/Header/Header'
 import ExploreProducts from '../../comoponents/ExploreProducts/ExploreProducts'
 import ProductDisplay from '../../comoponents/ProductDisplay/ProductDisplay'
+import Reviews from '../../comoponents/Reviews/Reviews'
 
 const Home = () => {
     
@@ -13,6 +14,7 @@ const Home = () => {
       <Header/>
       <ExploreProducts category={category} setCategory={setCategory} />
       <ProductDisplay category={category}/>
+      <Reviews/>
     </div>
   )
 }
