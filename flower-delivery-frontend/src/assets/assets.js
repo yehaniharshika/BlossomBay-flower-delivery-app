@@ -164,7 +164,7 @@ export const assets = {
 //   },
 // ];
 
-export const product_list = [
+export const menu_list = [
   {
       menu_name: "Lily",
       menu_image: product_1
@@ -204,12 +204,12 @@ export const product_list = [
 ];
 
 
-export const flower_list = [
+export const food_list = [
   {
     _id: "1",
     name: "Red Lilies Bouquet",
     image: flower_1,
-    price: 12,
+    price: 1400,
     description:
       "A stunning bouquet of vibrant red lilies, symbolizing love and passion.",
     category: "Lily",
@@ -218,7 +218,7 @@ export const flower_list = [
     _id: "2",
     name: "Pink Lilies Bouquet",
     image: flower_2,
-    price: 12,
+    price: 1450,
     description:
       "A delicate arrangement of pink lilies, representing admiration and prosperity.",
     category: "Lily",
@@ -227,7 +227,7 @@ export const flower_list = [
     _id: "3",
     name: "Pink Rose Lily Bouquet",
     image: flower_3,
-    price: 12,
+    price: 1500,
     description:
       "A beautiful combination of pink roses and lilies, perfect for expressing gratitude and affection.",
     category: "Lily",
@@ -236,7 +236,7 @@ export const flower_list = [
     _id: "4",
     name: "Lily & Dahlia Bouquet",
     image: flower_4,
-    price: 12,
+    price: 1200,
     description:
       "An elegant mix of lilies and dahlias, bringing together charm and elegance.",
     category: "Lily",
@@ -245,7 +245,7 @@ export const flower_list = [
     _id: "5",
     name: "Red Rose Bouquet",
     image: flower_5,
-    price: 14,
+    price: 1600,
     description:
       "A classic bouquet of deep red roses, symbolizing love and romance.",
     category: "Rose",
@@ -254,7 +254,7 @@ export const flower_list = [
     _id: "6",
     name: "White Rose Bouquet",
     image: flower_6,
-    price: 12,
+    price: 1800,
     description:
       "A pure and elegant bouquet of white roses, representing peace and new beginnings.",
     category: "Rose",
@@ -263,7 +263,7 @@ export const flower_list = [
     _id: "7",
     name: "Purple Rose Bouquet",
     image: flower_7,
-    price: 20,
+    price: 2000,
     description:
       "A rare and exquisite bouquet of purple roses, symbolizing enchantment and mystery.",
     category: "Rose",
@@ -272,7 +272,7 @@ export const flower_list = [
     _id: "8",
     name: "Pink Rose Bouquet",
     image: flower_8,
-    price: 15,
+    price: 1500,
     description:
       "A lovely bouquet of pink roses, representing grace, joy, and admiration.",
     category: "Rose",
@@ -281,7 +281,7 @@ export const flower_list = [
     _id: "9",
     name: "Pink Rose Basket",
     image: flower_9,
-    price: 15,
+    price: 1400,
     description:
       "A charming basket filled with fresh pink roses, perfect for any special occasion.",
     category: "Rose",
@@ -290,7 +290,7 @@ export const flower_list = [
     _id: "10",
     name: "Red Tulips Bouquet",
     image: flower_10,
-    price: 22,
+    price: 2200,
     description:
       "A bright and cheerful bouquet of red tulips, symbolizing love and passion.",
     category: "Tulip",
@@ -299,7 +299,7 @@ export const flower_list = [
     _id: "11",
     name: "White Tulips Bouquet",
     image: flower_11,
-    price: 10,
+    price: 1800,
     description:
       "A graceful arrangement of white tulips, representing purity and forgiveness.",
     category: "Tulip",
@@ -308,7 +308,7 @@ export const flower_list = [
     _id: "12",
     name: "Pink Tulips Bouquet",
     image: flower_12,
-    price: 12,
+    price: 1800,
     description:
       "A soft and elegant bouquet of pink tulips, symbolizing happiness and confidence.",
     category: "Tulip",
@@ -317,7 +317,7 @@ export const flower_list = [
     _id: "13",
     name: "Purple Tulips Bouquet",
     image: flower_13,
-    price: 12,
+    price: 2200,
     description:
       "A regal bouquet of purple tulips, representing royalty and admiration.",
     category: "Tulip",
@@ -326,7 +326,7 @@ export const flower_list = [
     _id: "14",
     name: "Sunflower Bouquet",
     image: flower_14,
-    price: 18,
+    price: 1200,
     description:
       "A bright and cheerful bouquet of sunflowers, symbolizing warmth and happiness.",
     category: "Sunflower",
@@ -335,7 +335,7 @@ export const flower_list = [
     _id: "15",
     name: "Sunflower Roses Bouquet",
     image: flower_15,
-    price: 16,
+    price: 1300,
     description:
       "A lively mix of sunflowers and roses, radiating positivity and love.",
     category: "Sunflower",
@@ -344,16 +344,16 @@ export const flower_list = [
     _id: "16",
     name: "Sunflower Basket",
     image: flower_16,
-    price: 24,
+    price: 1200,
     description:
       "A beautiful basket of sunflowers, perfect for spreading joy and warmth.",
     category: "Sunflower",
   },
   {
     _id: "17",
-    name: "Sunflower White Lily Bouquet",
+    name: "Sunflower Lily Bouquet",
     image: flower_17,
-    price: 14,
+    price: 1400,
     description:
       "An elegant combination of sunflowers and white lilies, symbolizing hope and admiration.",
     category: "Sunflower",
@@ -362,7 +362,7 @@ export const flower_list = [
     _id: "18",
     name: "Pink Orchid Bouquet",
     image: flower_18,
-    price: 12,
+    price: 1500,
     description:
       "A luxurious bouquet of pink orchids, representing femininity and grace.",
     category: "Orchid",
@@ -371,7 +371,7 @@ export const flower_list = [
     _id: "19",
     name: "Blue Orchid Bunch",
     image: flower_19,
-    price: 20,
+    price: 1600,
     description:
       "An exotic bunch of blue orchids, symbolizing uniqueness and rarity.",
     category: "Orchid",
@@ -380,7 +380,7 @@ export const flower_list = [
     _id: "20",
     name: "Amazing Orchid Box",
     image: flower_20,
-    price: 15,
+    price: 1500,
     description:
       "A stunning basket arrangement of orchids, perfect for any occasion.",
     category: "Orchid",
@@ -389,7 +389,7 @@ export const flower_list = [
     _id: "21",
     name: "Blue Orchid Bouquet",
     image: flower_21,
-    price: 15,
+    price: 1500,
     description:
       "A mesmerizing bouquet of blue orchids, exuding elegance and mystery.",
     category: "Orchid",
@@ -398,7 +398,7 @@ export const flower_list = [
     _id: "22",
     name: "Sakura Flower Pot",
     image: flower_22,
-    price: 20,
+    price: 2000,
     description:
       "A delicate bottle arrangement of Sakura flowers, representing beauty and renewal.",
     category: "Sakura",
@@ -452,7 +452,7 @@ export const flower_list = [
     _id: "28",
     name: "Rose Lavender Bouquet",
     image: flower_28,
-    price: 16,
+    price: 1600,
     description:
       "A fragrant mix of roses and lavender, symbolizing love and serenity.",
     category: "Bridal",
@@ -461,7 +461,7 @@ export const flower_list = [
     _id: "29",
     name: "Pink Rose Bridal Bouquet",
     image: flower_29,
-    price: 24,
+    price: 2400,
     description:
       "A charming pink rose bouquet, perfect for weddings and romantic occasions.",
     category: "Bridal",
@@ -470,7 +470,7 @@ export const flower_list = [
     _id: "30",
     name: "White Tulip Bridal Bouquet",
     image: flower_30,
-    price: 14,
+    price: 2400,
     description:
       "A delicate bouquet of white tulips, ideal for a classic bridal look.",
     category: "Bridal",
@@ -479,7 +479,7 @@ export const flower_list = [
     _id: "31",
     name: "Red Rose Lily Bridal Bouquet",
     image: flower_31,
-    price: 12,
+    price: 2600,
     description:
       "A breathtaking mix of red roses and lilies, perfect for a romantic wedding.",
     category: "Bridal",
@@ -488,7 +488,7 @@ export const flower_list = [
     _id: "32",
     name: "Rose Sunflower Bridal Bouquet",
     image: flower_32,
-    price: 20,
+    price: 2000,
     description:
       "A bright and joyful bouquet, ideal for a rustic wedding theme.",
     category: "Bridal",
@@ -497,7 +497,7 @@ export const flower_list = [
     _id: "33",
     name: "Home Pink Artificial Tulip",
     image: flower_33,
-    price: 15,
+    price: 2500,
     description: "A beautiful arrangement of pink artificial tulips, adding elegance and charm to any home decor.",
     category: "Artificial"
 },
@@ -505,7 +505,7 @@ export const flower_list = [
     _id: "34",
     name: "Artificial Sakura Arrangement",
     image: flower_34,
-    price: 15,
+    price: 1500,
     description: "A stunning artificial Sakura flower arrangement, perfect for bringing a touch of spring indoors all year round.",
     category: "Artificial"
 },
@@ -513,7 +513,7 @@ export const flower_list = [
     _id: "35",
     name: "Artificial Purple Lily Bouquet",
     image: flower_35,
-    price: 15,
+    price: 1500,
     description: "A graceful artificial purple lily bouquet, ideal for home decoration, weddings, and special occasions.",
     category: "Artificial"
 },
@@ -521,7 +521,7 @@ export const flower_list = [
     _id: "36",
     name: "Dora Artificial Flower Pot",
     image: flower_36,
-    price: 15,
+    price: 1500,
     description: "A stylish artificial flower pot with a mix of vibrant blooms, perfect for brightening up any space.",
     category: "Artificial"
 }

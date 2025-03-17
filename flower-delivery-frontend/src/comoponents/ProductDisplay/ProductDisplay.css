@@ -1,9 +1,9 @@
-.food-display{
+.product-display{
     margin-top: 30px;
 }
 
-.food-display h2{
-    font-size: max(2vw,24px);
+.product-display h2{
+    font-size: max(1.6vw,24px);
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
 }
