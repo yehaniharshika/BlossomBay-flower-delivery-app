@@ -6,12 +6,17 @@ import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import Footer from "./comoponents/Footer/Footer";
+import LoginPopup from "./comoponents/LoginPopup/LoginPopup";
 
 const App = () => {
+
+  const [showLogin,setShowLogin] =useState(false);
+
   return (
     <>
+    {showLogin ? <LoginPopup setShowLogin={setShowLogin} /> : <></>}
       <div className="app">
-        <Navigationbar />
+        <Navigationbar setShowLogin={setShowLogin}/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
