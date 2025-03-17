@@ -204,7 +204,7 @@ export const menu_list = [
 ];
 
 
-export const food_list = [
+export const flower_list = [
   {
     _id: "1",
     name: "Red Lilies Bouquet",
