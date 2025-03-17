@@ -165,6 +165,266 @@ export const menu_list = [
     //         menu_image: product_9
     //     }]
 
+export const flower_list = [
+    {
+        _id: "1",
+        name: "Red lilies Bouquet",
+        image: food_1,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lily"
+    },
+    {
+        _id: "2",
+        name: "Pink lilies Bouquet",
+        image: food_1,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lily"
+    },
+    {
+        _id: "3",
+        name: "Pink rose lily Bouquet",
+        image: food_1,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lily"
+    },
+    {
+        _id: "4",
+        name: "Lily & Dahlia Bouquet",
+        image: food_1,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lily"
+    },
+    {
+        _id: "5",
+        name: "Red rose Bouquet",
+        image: food_5,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Rose"
+    },
+    {
+        _id: "6",
+        name: "White rose Bouquet",
+        image: food_6,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Rose"
+    }, 
+    {
+        _id: "7",
+        name: "Purple Rose Bouquet",
+        image: food_7,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Rose"
+    }, 
+    {
+        _id: "8",
+        name: "Pink rose Bouquet",
+        image: food_8,
+        price: 15,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Rose"
+    },
+    {
+        _id: "9",
+        name: "Pink rose Basket",
+        image: food_8,
+        price: 15,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Rose"
+    },
+    {
+        _id: "10",
+        name: "Red tulips Bouquet",
+        image: food_10,
+        price: 22,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Tulip"
+    }, 
+    {
+        _id: "11",
+        name: "White tulips Bouquet",
+        image: food_11,
+        price: 10,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Tulip"
+    },
+    {
+        _id: "12",
+        name: "Pink tulips Bouquet",
+        image: food_12,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Tulip"
+    },
+    {
+        _id: "13",
+        name: "Purple tulips Bouquet",
+        image: food_12,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Tulip"
+    },
+    {
+        _id: "14",
+        name: "Sunflower Bouquet",
+        image: food_14,
+        price: 18,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sunflower"
+    },
+    {
+        _id: "15",
+        name: "Sunflower roses Bouquet",
+        image: food_15,
+        price: 16,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sunflower"
+    }, 
+    {
+        _id: "16",
+        name: "Suflower Basket",
+        image: food_16,
+        price: 24,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sunflower"
+    }, 
+    {
+        _id: "17",
+        name: "Sunflower white lily Bouquet",
+        image: food_17,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sunflower"
+    }, 
+    {
+        _id: "18",
+        name: "Pink orchid Bouquet",
+        image: food_18,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Orchid"
+    }, 
+    {
+        _id: "19",
+        name: "Blue orchid Bunch",
+        image: food_19,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Orchid"
+    }, 
+    {
+        _id: "20",
+        name: "Amzing orchid Basket",
+        image: food_20,
+        price: 15,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Orchid"
+    },
+    {
+        _id: "21",
+        name: "Blue orchid Bouquet",
+        image: food_20,
+        price: 15,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Orchid"
+    },
+    {
+        _id: "22",
+        name: "Sakura flower Bottle",
+        image: food_19,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sakura"
+    }, 
+    {
+        _id: "23",
+        name: "Sakura Bouquet",
+        image: food_20,
+        price: 3500,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Sakura"
+    },
+    {
+        _id: "24",
+        name: "Pink lotus Bouquet",
+        image: food_25,
+        price: 2200,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lotus"
+    },
+    {
+        _id: "25",
+        name: "White lotus Bouquet",
+        image: food_25,
+        price: 2200,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lotus"
+    },
+    {
+        _id: "26",
+        name: "Pink lotus basket",
+        image: food_26,
+        price: 2800,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Lotus"
+    }, 
+    {
+        _id: "27",
+        name: "Creamy Pasta",
+        image: food_27,
+        price: 16,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: ""
+    }, 
+    {
+        _id: "28",
+        name: "Chicken Pasta",
+        image: food_28,
+        price: 24,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Pasta"
+    }, 
+    {
+        _id: "29",
+        name: "Buttter Noodles",
+        image: food_29,
+        price: 14,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Noodles"
+    }, 
+    {
+        _id: "30",
+        name: "Veg Noodles",
+        image: food_30,
+        price: 12,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Noodles"
+    }, 
+    {
+        _id: "31",
+        name: "Somen Noodles",
+        image: food_31,
+        price: 20,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Noodles"
+    }, 
+    {
+        _id: "32",
+        name: "Cooked Noodles",
+        image: food_32,
+        price: 15,
+        description: "Food provides essential nutrients for overall health and well-being",
+        category: "Noodles"
+    }
+
+    
+]        
 export const food_list = [
     {
         _id: "1",
