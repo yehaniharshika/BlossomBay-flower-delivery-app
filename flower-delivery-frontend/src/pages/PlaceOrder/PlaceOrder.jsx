@@ -25,7 +25,7 @@ const PlaceOrder = () => {
         <input type="tel" placeholder="Phone" />
       </div>
       <div className="place-order-right">
-        <div className="cart-total">
+      <div className="cart-total">
           <h2>Cart Totals</h2>
           <div>
             <div className="cart-total-details">
@@ -35,15 +35,15 @@ const PlaceOrder = () => {
             <hr />
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>{200}.00</p>
+              <p>{getTotalCartAmount()===0?0:200}.00</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>{getTotalCartAmount() + 200}.00</b>
+              <b>{getTotalCartAmount()===0?0:getTotalCartAmount()+200}.00</b>
             </div>
           </div>
-          <button>PROCEED TO PAYMENT</button>
+          <button onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
         </div>
       </div>
     </form>
