@@ -1,8 +1,8 @@
-import flowerModel from "../models/flowerModel";
+import flowerModel from "../models/flowerModel.js";
 import fs from 'fs'
 
 //Add flower item
-const affFlower = async(req,res) => {
+const addFlower = async(req,res) => {
     let image_filename = `${req.file.filename}`;
 
     const flower = new flowerModel({
@@ -15,7 +15,7 @@ const affFlower = async(req,res) => {
 
     try{
         await flower.save();
-        req.json({success:true,message:"Flower Added"})
+        res.json({ success: true, message: "Flower Added" });
     }catch(error){
         console.log(error);
         res.json({success:false,message:"Error"})

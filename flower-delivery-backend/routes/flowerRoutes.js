@@ -2,18 +2,18 @@ import express from "express"
 import { addFlower } from "../controllers/flowerController.js"
 import multer from "multer"
 
-const foodRouter = express.Router();
+const flowerRouter = express.Router();
 
 //Image Storage Engine
 const storage = multer.diskStorage({
     destination:"uploads",
     filename:(req,file,cb)=>{
-        return cb(null,`${Date.now()}${file.originalname}`)
+        return cb(null,`${Date.now()}${file.originalname}`);
     }
 });
 
 const upload = multer({storage:storage});
 
-foodRouter.post("/add",upload.single("image"),addFlower)
+flowerRouter.post("/add",upload.single("image"),addFlower)
 
-export default foodRouter;
+export default flowerRouter;
