@@ -18,7 +18,7 @@ const addFlower = async(req,res) => {
         res.json({ success: true, message: "Flower Added" });
     }catch(error){
         console.log(error);
-        res.json({success:false,message:"Error"})
+        res.json({ success:false, message:"Error" })
     }
     
 }
