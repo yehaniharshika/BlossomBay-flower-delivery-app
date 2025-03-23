@@ -4,8 +4,8 @@ import { assets } from "../../assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-const Add = () => {
-  const url = "http://localhost:4000";
+const Add = ({url}) => {
+  
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -38,11 +38,11 @@ const Add = () => {
       });
       setImage(false);
       toast.success(response.data.message, {
-        style: { fontFamily: "Montserrat, sans-serif",fontWeight:"700" },
+        style: { fontFamily: "Montserrat, sans-serif",fontWeight:"500" },
       });
     } else {
       toast.error(response.data.message, {
-        style: { fontFamily: "Montserrat, sans-serif",fontWeight:"700" },
+        style: { fontFamily: "Montserrat, sans-serif",fontWeight:"500" },
       });
     }
   };

@@ -3,9 +3,8 @@ import './List.css'
 import axios  from 'axios';
 import { toast } from 'react-toastify';
 
-const List = () => {
+const List = ({url}) => {
 
-    const url = "http://localhost:4000"
     const [list,setList] = useState([]);
 
     const fetchList = async () => {
@@ -16,14 +15,26 @@ const List = () => {
             setList(response.data.data);
         }else {
             toast.error("Error", {
-                style: { fontFamily: "Montserrat, sans-serif",fontWeight:"700" },
+                style: {fontFamily: "Montserrat, sans-serif",fontWeight:"500" },
             })
+        }
+    }
+
+    const removeFlower = async(flowerId) => {
+        const response = await axios.post(`${url}/api/flower/remove`,{id:flowerId})
+        await fetchList();
+        if(response.data.success){
+            toast.success(response.data.message, {
+                style: {fontFamily: "Montserrat, sans-serif",fontWeight:"500" },
+            });
         }
     }
 
     useEffect(() => {
         fetchList();
     },[])
+
+
   return (
     <div className='list add flex-col'>
     <p className='list-title'>All Flowers List</p>
@@ -42,7 +53,7 @@ const List = () => {
             <p>{item.name}</p>
             <p>{item.category}</p>
             <p>Rs: {item.price}</p>
-            <p onClick={()=>removeFood(item._id)} className='cursor'>X</p>
+            <p onClick={()=>removeFlower(item._id)} className='cursor'>X</p>
           </div>
         )
       })}
