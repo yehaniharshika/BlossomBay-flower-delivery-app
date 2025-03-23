@@ -16,6 +16,7 @@ connectDB();
 
 //API Endpoints
 app.use("/api/flower",flowerRouter);
+app.use("/images",express.static('uploads'));
 
 
 app.get('/',(req,res) => {

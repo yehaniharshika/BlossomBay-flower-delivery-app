@@ -23,4 +23,15 @@ const addFlower = async(req,res) => {
     
 }
 
-export {addFlower}
+// All flower list
+const listFlower = async (req,res) => {
+    try{
+        const flowers = await flowerModel.find({});
+        res.json({success:true,data:flowers})
+    }catch(error){
+        console.log(error);
+        res.json({success:false,message:"Error"});
+    }
+}
+
+export {addFlower,listFlower}

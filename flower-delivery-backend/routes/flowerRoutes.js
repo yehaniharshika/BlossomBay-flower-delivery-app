@@ -1,5 +1,5 @@
 import express from "express"
-import { addFlower } from "../controllers/flowerController.js"
+import { addFlower , listFlower} from "../controllers/flowerController.js"
 import multer from "multer"
 
 const flowerRouter = express.Router();
@@ -15,5 +15,6 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage});
 
 flowerRouter.post("/add",upload.single("image"),addFlower)
+flowerRouter.get("/list",listFlower)
 
 export default flowerRouter;
