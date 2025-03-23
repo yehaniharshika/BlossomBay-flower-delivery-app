@@ -3,7 +3,7 @@
     min-height: 100vh;
     border: 1.5px solid #a9a9a9;
     border-top: 0;
-    font-size: max(0.8vw,10px);
+    font-size: max(0.8vw,12px);
 }
 
 .sidebar-options{
@@ -28,8 +28,8 @@
 }
 
 .sidebar-option.active{
-    background-color: #fff0ed;
-    border-color: #ffe44c;
+    background-color: #ffb2f5;
+    border-color: deeppink;
 }
 
 @media (max-width:900px) {
