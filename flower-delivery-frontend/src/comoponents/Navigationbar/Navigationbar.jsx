@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Navigationbar.css";
+import "./NavigationBar.css";
 import { assets } from "../../assets/assets";
 import {Link} from 'react-router-dom';
 import { useContext } from "react";
 import { StoreContext } from "../../context/StoreContext";
 
-const Navigationbar = ({setShowLogin}) => {
+const NavigationBar = ({setShowLogin}) => {
 
     const[menu,setMenu] = useState("home");
     const {getTotalCartAmount} = useContext(StoreContext);
@@ -33,5 +33,5 @@ const Navigationbar = ({setShowLogin}) => {
   );
 };
 
-export default Navigationbar;
+export default NavigationBar;
 
