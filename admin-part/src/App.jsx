@@ -9,8 +9,7 @@ const App = () => {
       <hr/>
       <div className="app-content">
         <Sidebar/>
-      </div>
-      
+      </div> 
     </div>
   )
 }
