@@ -34,4 +34,20 @@ const listFlower = async (req,res) => {
     }
 }
 
-export {addFlower,listFlower}
+//Remove flower item
+const removeFlower = async(req,res) => {
+    try {
+        // To find flower using Id
+        const flower = await flowerModel.findById(req.body.id);
+        fs.unlink(`uploads/${flower.image}`,() =>{})
+
+        await flowerModel.findByIdAndDelete(req.body.id);
+        res.json({success:true,message:"Flower Removed"})
+    }catch(error){
+        console.log(error);
+        res.json({success:false,message:"Error"});
+    }
+
+}
+
+export {addFlower,listFlower,removeFlower}
