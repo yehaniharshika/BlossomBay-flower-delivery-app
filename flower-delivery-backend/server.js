@@ -2,6 +2,8 @@ import express from 'express'
 import cors from "cors";
 import { connectDB } from './config/db.js';
 import flowerRouter from './routes/flowerRoutes.js';
+import userRouter from './routes/userRoutes.js';
+import 'dotenv/config'
 
 // app config
 const app = express();
@@ -17,6 +19,7 @@ connectDB();
 //API Endpoints
 app.use("/api/flower",flowerRouter);
 app.use("/images",express.static('uploads'));
+app.use("/api/user",userRouter)
 
 
 app.get('/',(req,res) => {
