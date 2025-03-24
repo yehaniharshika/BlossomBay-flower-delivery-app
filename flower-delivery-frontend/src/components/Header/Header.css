@@ -33,18 +33,23 @@
     color: white;
     font-size: 1.2vw;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .header-contents button{
     border: none;
     color: #747474;
     font-weight: 600;
-    padding: 1vw 2.3vw;
+    padding: 1vw 2vw;
     background-color: white;
-    font-size: max(1vw,13px);
+    font-size: max(0.8vw,13px);
     border-radius: 50px;
     font-family: "Montserrat", sans-serif;
+}
+
+
+.header-contents button:hover {
+    border: 4px solid deeppink; 
 }
 
 @media (max-width:1050px) {

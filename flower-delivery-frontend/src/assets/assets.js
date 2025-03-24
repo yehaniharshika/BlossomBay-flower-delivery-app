@@ -310,7 +310,7 @@ export const flower_list = [
     image: flower_12,
     price: 1800,
     description:
-      "A soft and elegant bouquet of pink tulips, symbolizing happiness and confidence.",
+      "A soft and elegant bouquet of pink tulips,symbolizing happiness and confidence.",
     category: "Tulip",
   },
   {
@@ -505,7 +505,7 @@ export const flower_list = [
     _id: "34",
     name: "Artificial Sakura Arrangement",
     image: flower_34,
-    price: 1500,
+    price: 2500,
     description: "A stunning artificial Sakura flower arrangement, perfect for bringing a touch of spring indoors all year round.",
     category: "Artificial"
 },
@@ -513,7 +513,7 @@ export const flower_list = [
     _id: "35",
     name: "Artificial Purple Lily Bouquet",
     image: flower_35,
-    price: 1500,
+    price: 2500,
     description: "A graceful artificial purple lily bouquet, ideal for home decoration, weddings, and special occasions.",
     category: "Artificial"
 },
