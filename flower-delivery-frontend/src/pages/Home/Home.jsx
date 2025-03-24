@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import "./Home.css"
-import Header from '../../comoponents/Header/Header'
-import ExploreProducts from '../../comoponents/ExploreProducts/ExploreProducts'
-import ProductDisplay from '../../comoponents/ProductDisplay/ProductDisplay'
-import Reviews from '../../comoponents/Reviews/Reviews'
-import AppDownload from '../../comoponents/AppDownload/AppDownload'
+import Header from '../../components/Header/Header';
+import ExploreProducts from '../../components/ExploreProducts/ExploreProducts';
+import ProductDisplay from '../../components/ProductDisplay/ProductDisplay';
+import Reviews from '../../components/Reviews/Reviews';
+import AppDownload from '../../components/AppDownload/AppDownload';
+
 
 const Home = () => {
     
