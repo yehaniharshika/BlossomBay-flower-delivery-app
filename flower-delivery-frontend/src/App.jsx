@@ -4,9 +4,10 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Cart from "./pages/Cart/Cart";
 import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
-import Footer from "./comoponents/Footer/Footer";
-import LoginPopup from "./comoponents/LoginPopup/LoginPopup";
-import NavigationBar from "./comoponents/Navigationbar/Navigationbar";
+import LoginPopup from "./components/LoginPopup/LoginPopup";
+import NavigationBar from "./components/NavigationBar/Navigationbar";
+import Footer from "./components/Footer/Footer";
+
 
 const App = () => {
 
