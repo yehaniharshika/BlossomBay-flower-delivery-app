@@ -5,6 +5,7 @@ import flowerRouter from './routes/flowerRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import 'dotenv/config'
 import cartRouter from './routes/cartRoutes.js';
+import orderRouter from './routes/orderRoutes.js';
 
 // app config
 const app = express();
@@ -22,6 +23,7 @@ app.use("/api/flower",flowerRouter);
 app.use("/images",express.static('uploads'));
 app.use("/api/user",userRouter);
 app.use("/api/cart",cartRouter);
+app.use("/api/order",orderRouter);
 
 
 app.get('/',(req,res) => {
