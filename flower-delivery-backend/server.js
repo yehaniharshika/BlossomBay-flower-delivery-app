@@ -4,6 +4,7 @@ import { connectDB } from './config/db.js';
 import flowerRouter from './routes/flowerRoutes.js';
 import userRouter from './routes/userRoutes.js';
 import 'dotenv/config'
+import cartRouter from './routes/cartRoutes.js';
 
 // app config
 const app = express();
@@ -19,7 +20,8 @@ connectDB();
 //API Endpoints
 app.use("/api/flower",flowerRouter);
 app.use("/images",express.static('uploads'));
-app.use("/api/user",userRouter)
+app.use("/api/user",userRouter);
+app.use("/api/cart",cartRouter);
 
 
 app.get('/',(req,res) => {
