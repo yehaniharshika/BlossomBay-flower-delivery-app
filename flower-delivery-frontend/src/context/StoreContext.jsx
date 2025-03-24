@@ -22,11 +22,6 @@ const StoreContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
 
-  const fetchFlowerList = async() => {
-    const response = await axios.get(url+"/api/flower/list");
-    setFlowerList(response.data.data)
-  }
-
   // useEffect(() => {
   //     console.log(cartItems);
   // },[cartItems])
@@ -43,10 +38,20 @@ const StoreContextProvider = (props) => {
     return totalAmount;
   };
 
+  const fetchFlowerList = async() => {
+    const response = await axios.get(url+"/api/flower/list");
+    setFlowerList(response.data.data);
+  }
+
   useEffect(() => {
-    if(localStorage.getItem("token")) {
-      setToken(localStorage.getItem("token"));
+    
+  async function loadData() {
+      await fetchFlowerList();
+      if(localStorage.getItem("token")) {
+        setToken(localStorage.getItem("token"));
+      }
     }
+    loadData();
   },[])
 
   const contextValue = {
