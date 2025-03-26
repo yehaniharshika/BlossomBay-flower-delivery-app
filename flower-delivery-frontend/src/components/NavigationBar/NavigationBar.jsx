@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 import { FiMenu, FiX } from "react-icons/fi";
 import "./NavigationBar.css";
@@ -10,6 +10,8 @@ const NavigationBar = ({ setShowLogin }) => {
   const { getTotalCartAmount, token, setToken } = useContext(StoreContext);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For toggle icon menu
+
+  const navigate = useNavigate();
 
   const logout = () => {
     localStorage.removeItem("token");
@@ -42,7 +44,7 @@ const NavigationBar = ({ setShowLogin }) => {
           <div className="navbar-profile">
             <img src={assets.profile_icon} alt="Profile" />
             <ul className="nav-profile-dropdown">
-              <li><img src={assets.bag_icon} alt="Orders" /><p>Orders</p></li>
+              <li onClick={() => navigate('/myOrders')}><img src={assets.bag_icon} alt="Orders" /><p>Orders</p></li>
               <hr />
               <li onClick={logout}><img src={assets.logout_icon} alt="Logout" /><p>Logout</p></li>
             </ul>
