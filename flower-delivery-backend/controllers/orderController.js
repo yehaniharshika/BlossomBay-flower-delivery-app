@@ -105,7 +105,6 @@ const updateStatus = async(req,res) => {
     console.log(error);
     res.json({ success: false, message: "Error" });
   }
-
 }
 
 export { placeOrder,verifyOrder,userOrders,listOrders ,updateStatus};
