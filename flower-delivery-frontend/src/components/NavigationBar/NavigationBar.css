@@ -121,6 +121,44 @@
     font-weight: 550;
 }
 
+.toggle-menu {
+    display: none; 
+}
+
+.toggle-icon {
+    background: transparent;
+    border: 2px solid deeppink;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.toggle-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff2ef;
+    list-style: none;
+    padding: 20px 30px;
+    border: 1px solid deeppink;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    max-width: 200px;
+}
+
+.toggle-dropdown li a {
+    text-decoration: none;
+    color: #49557e;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
 @media (max-width:1050px) {
     .navbar .logo{
         width: 140px;
@@ -174,8 +212,50 @@
     }
 }
 
+@media (max-width: 810px) {
+    .toggle-menu {
+        display: block; /* Show toggle icon on smaller screens */
+        position: relative;
+    }
+
+    .toggle-dropdown {
+        display: flex; 
+    }
+
+    .navbar-menu {
+        display: none; /* Hide main navbar menu on smaller screens */
+    }
+}
+
+
 @media (max-width:750px) {
     .navbar-menu{
         display: none;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+}
+
+@media (max-width:443px) {
+    .navbar-menu{
+        display: none;
+    }
+
+    .navbar-right {
+        gap: 5px;
+    }
+
+    .navbar a, .navbar button {
+        font-size: 10px; 
+    }
+
+    .logo {
+        font-size: 18px; 
+    }
+
+    .navbar-right img {
+        width: 18px; 
     }
 }
